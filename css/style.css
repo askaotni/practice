@@ -1,0 +1,454 @@
+@charset "utf-8";
+/* リセット  */
+body, h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+	margin: 0px;
+}
+
+.fixed_bg {
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+	margin: 0px;
+}
+ .fixed_bg02 {
+  min-height: 15vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+	 margin: 0px;
+
+}
+
+.bg_img02 {
+	background-image: url(../img/sea.jpg);
+}
+#logo {
+	cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+img {
+  vertical-align: bottom;
+	
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+*, *:before, *:after {
+  box-sizing: border-box
+}
+/* --------------------------*/
+#wrap {
+  overflow: hidden;
+	margin: 0;
+}
+header {
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+/*ロゴのアニメ*/
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+#logo img {
+	width: 7vw;
+	height: 8vw;
+}
+.fixed_bg.bg_img02 h1 {
+	text-align: center;
+	font-size: 40vh;
+	color: #FFFFFF;
+	padding-top: 50px;
+}
+#contents {
+	padding: 0;
+}
+
+ section {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+.container_hero img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container2 {
+  width: 740px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0px solid #000099;
+}
+.container3 .type {
+  width: 740px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0px solid #000099;
+}
+.container_parallax {
+	position: relative;
+	height: 350px;
+	background-image: url(../../../../Desktop/Let%27stry/sea.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+   background-size: cover;
+	margin: 20px auto;
+}
+.single img {
+	margin: 0 auto;
+}
+
+
+.field_oya {
+	margin-bottom: 0px;
+}
+.container3 .petype {
+   width: 1080px;
+	margin: 15px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.container3 .petype .pe{
+	position: relative;
+	width: 320px;
+	margin: 0 20px 50px 0;
+
+}
+.container3 .petype .pe div{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	background: rgba(178,190,201, .7);
+	top:0;
+	left: 0;
+	box-sizing: border-box;
+
+}
+.container3 .petype .pe p {
+position: relative;
+top: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .container2 {
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0px solid #000099;
+  }
+ .container3 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 979px) {
+  #contents {
+    padding: 0 0 20px;
+  }
+	#title {
+		width: 100%;
+		font-size: 13vh;
+	}
+	.single {
+		width: 100%;
+		height: auto;
+	}
+  .container2 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+}
+
+/*横並び１FLEXBOX*/
+.field_oya {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.field_ko {
+  width: 49%;
+  border: px solid #000000;
+  box-sizing: border-box;
+}
+.field_ko:first-of-type {
+  margin-right: 2%;
+}
+.field_ko img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 666px) {
+
+	.single {
+		width: 100%;
+		height:auto;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 979px) {
+  .field_ko {
+    width: 100%;
+    border: px solid #000000;
+    box-sizing: border-box;
+  }
+  .field_ko:first-of-type {
+    margin-right: 0%;
+    margin-bottom: 2%;
+  }
+}
+.field_ko h2 {
+  margin-top: 4px;
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-bottom: 0px;
+}
+.field_ko p {
+  margin: 9px 19px;
+  line-height: 21px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .field_ko p {
+    margin: 13px 33px;
+    line-height: 24px;
+  }
+}
+.item-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.item-text h2 {
+  /*width:100%;*/
+  border: 0px solid #000000;
+}
+.item-text p {
+  border: 0px solid #000000;
+}
+.animal_oya {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0px solid #888888;
+}
+/*横並び２FLEXBOX*/
+.animal_ko {
+  width: 32.33%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 20%;
+  border: 0px solid #888888;
+}
+.animal_ko:nth-of-type(3n+2) {
+  margin-top: 15%;
+  margin-bottom: 5.5%;
+}
+.animal_ko img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 979px) {
+  .animal_oya {
+    margin-left: -1%;
+    margin-right: -1%;
+  }
+  .animal_ko {
+    width: 48%;
+    margin: 1%;
+  }	
+	}
+@media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxより小さい場合はここを読み込む　*/
+	
+	.petype { 
+   display: flex;
+ flex-flow: column;
+
+   }
+.container3 {
+	margin: 0 40px;
+    padding: 15px;
+	 border: px solid #000000;
+    box-sizing: border-box;
+  }
+	.pe img {
+		width: 100%;
+		height: auto;
+	}
+	#main .container3 .type{
+		width: 100%;
+		height: auto;
+	}
+	}
+@keyframes fadeuplogo01 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  } /*opacity透明度。translateY(Y方向の移動距離)*/
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*アニメfadeup*/
+.fadeup {
+  animation-fill-mode: both; /*animation-fill-modeは、アニメーションの開始前、終了後のスタイルを指定*/
+  animation-duration: 1s;
+  animation-name: fadeup01;
+  visibility: visible !important;
+}
+@media screen and (max-width:480px) { 
+    /*　画面サイズが480pxより小さい場合はここを読み込む　*/
+	
+	.petype { 
+   display: flex;
+ flex-flow: column;
+		justify-content: center;
+
+   }
+.container3 {
+	margin: 0 auto;
+  }
+	.pe {
+		width: 60%;
+		height: auto;
+	}
+	}
+@keyframes fadeuplogo01 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  } /*opacity透明度。translateY(Y方向の移動距離)*/
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*アニメfadeup*/
+.fadeup {
+  animation-fill-mode: both; /*animation-fill-modeは、アニメーションの開始前、終了後のスタイルを指定*/
+  animation-duration: 1s;
+  animation-name: fadeup01;
+  visibility: visible !important;
+}
+@keyframes fadeup01 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*アニメboder-radius*/
+.animation02 {
+  opacity: 0.3;
+}
+.boderradius {
+  animation-fill-mode: both; /*animation-fill-modeは、アニメーションの開始前、終了後のスタイルを指定*/
+  animation-duration: 1s;
+  animation-name: boderradius01;
+  visibility: visible !important;
+}
+@keyframes boderradius01 {
+  0% {
+    opacity: 0.3;
+    border-radius: 0 0 0 0;
+  }
+  100% {
+    opacity: 1;
+    border-radius: 0% 30% 0% 30%;
+  }
+}
+
+/*アニメfadeup_b*/
+.fadeup_b {
+  animation-fill-mode: both; /*animation-fill-modeは、アニメーションの開始前、終了後のスタイルを指定*/
+  animation-duration: 1s;
+  animation-name: fadeup_b01;
+  visibility: visible !important;
+}
+@keyframes fadeup_b01 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(calc(-50% + 100px));
+    border-radius: 0 0 0 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10% 30% 50% 70%;
+  }
+}
+
+/*アニメrotate*/
+.rotate {
+  animation-fill-mode: both; /*animation-fill-modeは、アニメーションの開始前、終了後のスタイルを指定*/
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: rotate01;
+  visibility: visible !important;
+}
+@keyframes rotate01 {
+  0% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+}
